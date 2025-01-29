@@ -10,21 +10,21 @@
     <#-- 广告位 -->
     <div class="ad-mark" id="HOMEPAGE_TOP" style="display: none;margin-bottom: 10px"></div>
     <@prompt></@prompt>
-    <nav class="breadcrumb notice-container" style="display: none">
-        <div class="notify"><i class="fa fa-bullhorn fa-fw"></i></div>
-        <div id="scrolldiv">
-            <div class="scrolltext">
-                <ul class="list-unstyled" id="notice-box">
-                    <li class="scrolltext-title">
-                        <a href="javascript:void(0)" rel="bookmark">活了二十多年，没能为祖国、为人民做点什么，每思及此，伤心欲绝。</a>
-                    </li>
-                    <li class="scrolltext-title">
-                        <a href="javascript:void(0)" rel="bookmark">其实我们可以将所有的问题归结为两种：一种是没饭吃饿出来的；一种是吃饱了撑出来的。</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<#--    <nav class="breadcrumb notice-container" style="display: none">-->
+<#--        <div class="notify"><i class="fa fa-bullhorn fa-fw"></i></div>-->
+<#--        <div id="scrolldiv">-->
+<#--            <div class="scrolltext">-->
+<#--                <ul class="list-unstyled" id="notice-box">-->
+<#--                    <li class="scrolltext-title">-->
+<#--                        <a href="javascript:void(0)" rel="bookmark">活了二十多年，没能为祖国、为人民做点什么，每思及此，伤心欲绝。</a>-->
+<#--                    </li>-->
+<#--                    <li class="scrolltext-title">-->
+<#--                        <a href="javascript:void(0)" rel="bookmark">其实我们可以将所有的问题归结为两种：一种是没饭吃饿出来的；一种是吃饱了撑出来的。</a>-->
+<#--                    </li>-->
+<#--                </ul>-->
+<#--            </div>-->
+<#--        </div>-->
+<#--    </nav>-->
     <div class="row">
         <div class="col-sm-8 blog-main">
             <@articleTag method="recommendedList" pageSize="8">

@@ -22,29 +22,29 @@
                         </div>
                         <div class="clear"></div>
                         <!-- 方案一：图标展示 -->
-                        <ul class="widget-icon">
-                            <#if config.wxCode?? && (config.wxCode?length > 0)>
-                            <li class="weixin auto-shake" data-container="body"
-                                data-toggle="popover" data-trigger="hover" data-placement="bottom" data-html="true" data-content="<img src='${config.wxCode}' style='width: 130px;' alt='QR Code'>">
-                                <a class="tag-icon" title="微信" rel="external nofollow"><i class="fa fa-weixin"></i></a>
-                            </li>
-                            </#if>
-                            <#if config.qq?? && (config.qq?length > 0)>
-                            <li class="tqq auto-shake">
-                                <a class="tag-icon" href="javascript:window.open('tencent://message/?uin=${config.qq}&Site=www.${config.domain}&Menu=yes')" title="点击QQ联系我" target="blank" rel="external nofollow"><i class="fa fa-qq"></i></a>
-                            </li>
-                            </#if>
-                            <#if config.weibo?? && (config.weibo?length > 0)>
-                            <li class="tsina auto-shake">
-                                <a class="tag-icon" href="${config.weibo}" title="点击查看我的微博" target="_blank" rel="external nofollow"><i class="fa fa-weibo"></i></a>
-                            </li>
-                            </#if>
-                            <#if config.github?? && (config.github?length > 0)>
-                            <li class="github auto-shake">
-                                <a class="tag-icon" href="${config.github}" title="点击查看我的github" target="_blank" rel="external nofollow"><i class="fa fa-github"></i></a>
-                            </li>
-                            </#if>
-                        </ul>
+<#--                        <ul class="widget-icon">-->
+<#--                            <#if config.wxCode?? && (config.wxCode?length > 0)>-->
+<#--                            <li class="weixin auto-shake" data-container="body"-->
+<#--                                data-toggle="popover" data-trigger="hover" data-placement="bottom" data-html="true" data-content="<img src='${config.wxCode}' style='width: 130px;' alt='QR Code'>">-->
+<#--                                <a class="tag-icon" title="微信" rel="external nofollow"><i class="fa fa-weixin"></i></a>-->
+<#--                            </li>-->
+<#--                            </#if>-->
+<#--                            <#if config.qq?? && (config.qq?length > 0)>-->
+<#--                            <li class="tqq auto-shake">-->
+<#--                                <a class="tag-icon" href="javascript:window.open('tencent://message/?uin=${config.qq}&Site=www.${config.domain}&Menu=yes')" title="点击QQ联系我" target="blank" rel="external nofollow"><i class="fa fa-qq"></i></a>-->
+<#--                            </li>-->
+<#--                            </#if>-->
+<#--                            <#if config.weibo?? && (config.weibo?length > 0)>-->
+<#--                            <li class="tsina auto-shake">-->
+<#--                                <a class="tag-icon" href="${config.weibo}" title="点击查看我的微博" target="_blank" rel="external nofollow"><i class="fa fa-weibo"></i></a>-->
+<#--                            </li>-->
+<#--                            </#if>-->
+<#--                            <#if config.github?? && (config.github?length > 0)>-->
+<#--                            <li class="github auto-shake">-->
+<#--                                <a class="tag-icon" href="${config.github}" title="点击查看我的github" target="_blank" rel="external nofollow"><i class="fa fa-github"></i></a>-->
+<#--                            </li>-->
+<#--                            </#if>-->
+<#--                        </ul>-->
                         <!-- 方案二：列表展示 -->
                         <#--<ul class="list-unstyled">
                             <li><i class="fa fa-info-circle fa-fw"></i>博主：<small>张亚东</small></li>
@@ -185,7 +185,7 @@
                 <li> <i class="fa fa-users fa-fw"></i> 在线人数：<span class="online">1</span>人</li>
                 <li> <i class="fa fa-calendar fa-fw"></i> 运行天数：${siteInfo.installdate!(1)}天</li>
                 <li> <i class="fa fa-pencil-square fa-fw"></i> 最后更新：${siteInfo.lastUpdateTime!("暂无更新记录")}</li>
-                <li> <i class="fa fa-vine fa-fw"></i>  系统版本：<a href="https://gitee.com/yadong.zhang/DBlog/releases/${appInfo.version!}" rel="nofollow" target="_blank" style="color: #4286ca;font-weight: 600;">${appInfo.version!}</a></li>
+<#--                <li> <i class="fa fa-vine fa-fw"></i>  系统版本：<a href="https://gitee.com/yadong.zhang/DBlog/releases/${appInfo.version!}" rel="nofollow" target="_blank" style="color: #4286ca;font-weight: 600;">${appInfo.version!}</a></li>-->
             </@zhydTag>
         </ul>
     </div>

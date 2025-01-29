@@ -68,34 +68,34 @@
         </div>
     </div>
 </div>
-<div class="modal fade" id="reward" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">山无棱江水为竭，冬雷震震夏雨雪，才敢请君舍</h4>
-            </div>
-            <div class="modal-body">
-                <div class="rewardType" align="center">
-                    <ul class="list-unstyle list-inline">
-                        <li style="margin-right: 20px;">
-                            <input type="radio" name="type" id="alipay" onclick="PaymentUtils.change(0)" data-index="0" checked="checked" ><span style="margin-left: 5px;">支付宝</span>
-                        </li>
-                        <li style="margin-right: 20px;">
-                            <input type="radio" name="type" id="wechat" onclick="PaymentUtils.change(1)" data-index="1"><span style="margin-left: 5px;">微信</span>
-                        </li>
-                    </ul>
-                </div>
-                <div id="qrcode-container" align="center" style="margin-top: 10px;"></div>
-                <div style="width: 100%;color: #a3a3a3;font-size: 16px;font-family: 'Microsoft YaHei';text-align: center;">
-                    转账时请备注“<strong>博客赞助</strong>”
-                </div>
-            </div>
-        </div>
-        <small class="font-bold"></small>
-    </div>
-    <small class="font-bold"> </small>
-</div>
+<#--<div class="modal fade" id="reward" tabindex="-1" role="dialog">-->
+<#--    <div class="modal-dialog">-->
+<#--        <div class="modal-content">-->
+<#--            <div class="modal-header">-->
+<#--                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+<#--                <h4 class="modal-title">山无棱江水为竭，冬雷震震夏雨雪，才敢请君舍</h4>-->
+<#--            </div>-->
+<#--            <div class="modal-body">-->
+<#--                <div class="rewardType" align="center">-->
+<#--                    <ul class="list-unstyle list-inline">-->
+<#--                        <li style="margin-right: 20px;">-->
+<#--                            <input type="radio" name="type" id="alipay" onclick="PaymentUtils.change(0)" data-index="0" checked="checked" ><span style="margin-left: 5px;">支付宝</span>-->
+<#--                        </li>-->
+<#--                        <li style="margin-right: 20px;">-->
+<#--                            <input type="radio" name="type" id="wechat" onclick="PaymentUtils.change(1)" data-index="1"><span style="margin-left: 5px;">微信</span>-->
+<#--                        </li>-->
+<#--                    </ul>-->
+<#--                </div>-->
+<#--                <div id="qrcode-container" align="center" style="margin-top: 10px;"></div>-->
+<#--                <div style="width: 100%;color: #a3a3a3;font-size: 16px;font-family: 'Microsoft YaHei';text-align: center;">-->
+<#--                    转账时请备注“<strong>博客赞助</strong>”-->
+<#--                </div>-->
+<#--            </div>-->
+<#--        </div>-->
+<#--        <small class="font-bold"></small>-->
+<#--    </div>-->
+<#--    <small class="font-bold"> </small>-->
+<#--</div>-->
 <div id="loading">
     <div class="filter"></div>
     <div class="loader">
@@ -127,37 +127,37 @@
             </div>
         </footer>
     </#if>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col col-xs-12 col-md-12 col-lg-12">
-                    <p><#if config.copyright!>${config.copyright} |</#if> Powered by <a href="https://gitee.com/yadong.zhang/DBlog" title="OneBlog是一款简洁美观、自适应的Java博客系统..." data-toggle="tooltip" data-placement="right" target="_blank" style="color: #4286ca;font-weight: 600;">OneBlog ${appInfo.version!}</a>  </p>
-                    <#if url?? && (url == "index")>
-                        <div class="inline external-links">
-                            <a>友情链接：</a>
-                            <a href="https://justauth.wiki" target="_blank" title="开箱即用的整合第三方登录的开源组件" data-toggle="tooltip" data-placement="right">
-                                JustAuth
-                            </a>
-                            <a href="https://justauth.plus" target="_blank" title="一款开源的登录认证中间件，支持 Form、 OAuth2.0、OIDC、Http Basic、Digest、Bearer、LDAP、SAML、MFA、SSO 等" data-toggle="tooltip" data-placement="right">
-                                JAP
-                            </a>
-                            <#if indexLinkList?? && (indexLinkList?size > 0)>
-                                <#list indexLinkList as item>
-                                    <a href="${item.url}" target="_blank" title="${item.description!}" data-toggle="tooltip" data-placement="right">
-                                        ${item.name!}
-                                    </a>
-                                </#list>
-                                <a href="${config.siteUrl}/links" title="更多链接" data-toggle="tooltip" data-placement="right"><i class="fa fa-plus"></i>更多链接</a>
-                            <#else>
-                                <a href="${config.siteUrl}/links" title="申请友链" data-toggle="tooltip" data-placement="right">申请友链</a>
-                            </#if>
-                        </div>
-                    </#if>
+<#--    <footer class="footer">-->
+<#--        <div class="container">-->
+<#--            <div class="row">-->
+<#--                <div class="col col-xs-12 col-md-12 col-lg-12">-->
+<#--                    <p><#if config.copyright!>${config.copyright} |</#if> Powered by <a href="https://gitee.com/yadong.zhang/DBlog" title="OneBlog是一款简洁美观、自适应的Java博客系统..." data-toggle="tooltip" data-placement="right" target="_blank" style="color: #4286ca;font-weight: 600;">OneBlog ${appInfo.version!}</a>  </p>-->
+<#--                    <#if url?? && (url == "index")>-->
+<#--                        <div class="inline external-links">-->
+<#--                            <a>友情链接：</a>-->
+<#--                            <a href="https://justauth.wiki" target="_blank" title="开箱即用的整合第三方登录的开源组件" data-toggle="tooltip" data-placement="right">-->
+<#--                                JustAuth-->
+<#--                            </a>-->
+<#--                            <a href="https://justauth.plus" target="_blank" title="一款开源的登录认证中间件，支持 Form、 OAuth2.0、OIDC、Http Basic、Digest、Bearer、LDAP、SAML、MFA、SSO 等" data-toggle="tooltip" data-placement="right">-->
+<#--                                JAP-->
+<#--                            </a>-->
+<#--                            <#if indexLinkList?? && (indexLinkList?size > 0)>-->
+<#--                                <#list indexLinkList as item>-->
+<#--                                    <a href="${item.url}" target="_blank" title="${item.description!}" data-toggle="tooltip" data-placement="right">-->
+<#--                                        ${item.name!}-->
+<#--                                    </a>-->
+<#--                                </#list>-->
+<#--                                <a href="${config.siteUrl}/links" title="更多链接" data-toggle="tooltip" data-placement="right"><i class="fa fa-plus"></i>更多链接</a>-->
+<#--                            <#else>-->
+<#--                                <a href="${config.siteUrl}/links" title="申请友链" data-toggle="tooltip" data-placement="right">申请友链</a>-->
+<#--                            </#if>-->
+<#--                        </div>-->
+<#--                    </#if>-->
 
-                </div>
-            </div>
-        </div>
-    </footer>
+<#--                </div>-->
+<#--            </div>-->
+<#--        </div>-->
+<#--    </footer>-->
 <a class="to-top" title="点击返回顶部" data-toggle="tooltip" data-placement="bottom"></a>
 <#if config.webJsCdn?? && (config.webJsCdn?length > 0)>
     ${config.webJsCdn!}
